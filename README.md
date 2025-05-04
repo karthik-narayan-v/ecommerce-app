@@ -14,4 +14,4 @@ In the project directory, you do following things:
 
 ### `npm start`
 
-and check it in local:3000
+and check it in http://localhost:3000/
