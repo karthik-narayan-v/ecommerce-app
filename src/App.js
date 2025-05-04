@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import ProductDetails from "./pages/ProductDetails";
 import Header from "./components/Header";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+      <ToastContainer position="bottom-center" autoClose={2000} hideProgressBar />
     </Router>
   );
 }
